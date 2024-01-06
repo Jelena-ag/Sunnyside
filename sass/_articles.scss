@@ -1,10 +1,22 @@
 .articles__container {
   display: flex;
 
+  @media screen and (max-width: $largeMobile) {
+    flex-wrap: wrap-reverse;
+    width: 100vw;
+    margin-left: -15px;
+  }
+
   &--text,
   &--image {
     max-width: 50%;
     min-height: 600px;
+
+    @media screen and (max-width: $largeMobile) {
+      max-width: unset;
+      width: 100%;
+      min-height: 315px;
+    }
   }
 
   &--image {
@@ -21,6 +33,10 @@
       bottom: 0;
       width: 50vw;
       z-index: -1;
+
+      @media screen and (max-width: $largeMobile) {
+        display: none;
+      }
     }
   }
 
@@ -28,11 +44,21 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+
+    @media screen and (max-width: $largeMobile) {
+      margin: 70px 0 35px;
+      padding: 0 35px;
+      text-align: center;
+    }
   }
 
   &:nth-of-type(1) {
     & > [class$='--text'] {
       padding-right: 105px;
+
+      @media screen and (max-width: $smallDesktop) {
+        padding-right: 35px;
+      }
     }
 
     & > [class$='--image'] {
@@ -40,6 +66,10 @@
         right: 50vw;
         left: 0;
         background-color: $mediumYellow;
+
+        @media screen and (max-width: $largeMobile) {
+          display: none;
+        }
       }
     }
   }
@@ -48,6 +78,14 @@
     & > [class$='--text'] {
       order: 2;
       padding-left: 105px;
+
+      @media screen and (max-width: $smallDesktop) {
+        padding-left: 30px;
+      }
+
+      @media screen and (max-width: $largeMobile) {
+        order: 1;
+      }
 
       .text__link {
         &::after {
@@ -70,6 +108,10 @@
         right: 0;
         left: -50vw;
         background-color: $pink;
+
+        @media screen and (max-width: $largeMobile) {
+          display: none;
+        }
       }
     }
   }
@@ -77,6 +119,12 @@
 
 .body__container--tiles {
   display: flex;
+
+  @media screen and (max-width: $largeMobile) {
+    flex-direction: column;
+    width: 100vw;
+    margin-left: -15px;
+  }
 }
 
 .tiles__container {
@@ -88,6 +136,10 @@
   width: 50%;
   min-height: 600px;
 
+  @media screen and (max-width: $largeMobile) {
+    width: 100%;
+  }
+
   &::before {
     content: '';
     position: absolute;
@@ -95,6 +147,10 @@
     bottom: 0;
     width: 50vw;
     z-index: -1;
+
+    @media screen and (max-width: $largeMobile) {
+      display: none;
+    }
   }
 
   &:nth-of-type(1) {
@@ -111,6 +167,10 @@
       left: 0;
       right: 50vw;
       background: linear-gradient(to bottom, #5bcffe 31%, #5bcffe 41%, #2cb5fb 48%, #2cb5fb 51%, #5BCFFE 57%);
+
+      @media screen and (max-width: $largeMobile) {
+        display: none;
+      }
     }
 
     & > [class$='--header'] {
@@ -142,6 +202,14 @@
     font-size: 16px;
     line-height: 30px;
     text-align: center;
+
+    @media screen and (max-width: $smallDesktop) {
+      padding: 0 10px;
+    }
+
+    @media screen and (max-width: $largeMobile) {
+      margin-bottom: 30px;
+    }
   }
 }
 
@@ -150,11 +218,20 @@
   font-size: 40px;
   font-weight: 900;
   color: $darkGrey;
+
+  @media screen and (max-width: $largeMobile) {
+    font-size: 32px;
+  }
 }
 
 .text__content {
   margin: 50px 0 40px;
   line-height: 32px;
+
+  @media screen and (max-width: $largeMobile) {
+    margin: 35px 0;
+    line-height: 30px;
+  }
 }
 
 .text__link {
@@ -177,6 +254,11 @@
     border-radius: 3px;
     z-index: -1;
     transition: all 0.2s;
+
+    @media screen and (max-width: $largeMobile) {
+      left: 50%;
+      transform: translateX(-50%);
+    }
   }
 
   &:hover,
