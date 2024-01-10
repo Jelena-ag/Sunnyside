@@ -1,0 +1,72 @@
+.bg__color--blue {
+	background-color: $blueish;
+
+	.body__container--nav {
+		display: flex;
+		justify-content: space-between;
+		padding-top: 20px;
+		padding-bottom: 20px;
+
+		.nav__name {
+			color: $white;
+		}
+
+		.nav__items {
+			position: absolute;
+			top: 70px;
+			right: 15px;
+			display: flex;
+			flex-direction: column;
+			justify-content: space-evenly;
+			width: 345px;
+			height: 300px;
+			text-align: center;
+			background-color: $white;
+			z-index: 10;
+
+			&::before {
+				content: '';
+				position: absolute;
+				top: -20px;
+				right: 0;
+				border-bottom: 30px solid #fff;
+				border-left: 30px solid transparent;
+			}
+		}
+
+		.show {
+			display: none;
+		}
+
+		.nav__item {
+			color: $mediumGrey;
+			margin-left: 90px;
+			margin-right: 90px;
+
+			&:nth-last-child(1) {
+				border-radius: 30px;
+				line-height: 300%;
+				font-family: $fontSerif;
+				color: $darkGrey;
+				background-color: $yellow;
+				text-transform: uppercase;
+			}
+		}
+	}
+}
+
+
+
+// @media screen and (max-width: $largeMobile) {
+// 			.nav__name {
+// 				font-size: 1.5rem;
+// jak odkomituję f-s, to on zmienia się od razu na 375px. U Ciebie widzę że jeszcze to inaczej jest rozpisane. Tak samo było z inymi właściwościami.
+// 			}
+// }
+
+
+
+
+
+
+
