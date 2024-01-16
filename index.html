@@ -1,76 +1,91 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <title>Frontend Mentor | Sunnyside agency landing page</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@600&family=Fraunces:opsz,wght@9..144,700;9..144,900&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Barlow:wght@600&family=Fraunces:opsz,wght@9..144,700;9..144,900&display=swap"
+    rel="stylesheet">
   <link rel="stylesheet" href="./styles/main.css">
 </head>
+
 <body>
-  About
-  Services
-  Projects
-  Contact
-
-  We are creatives
-
-<main class="body__container">
-  <section class="body__container--articles">
-
-    <div class="articles__container">
-      <div class="articles__container--text">
-        <h2 class="text__header">Transform your brand</h2>
-        <p class="text__content">
-          We are a full-service creative agency specializing in helping brands grow fast. 
-          Engage your clients through compelling visuals that do most of the marketing for you.
-        </p>
-        <a href="#" class="text__link">Learn more</a>
+  <nav class="bg__color--blue">
+    <div class="body__container--nav">
+      <a class="nav__name" href="#">sunnyside</a>
+      <div class="nav__burger">
+        <svg width="24" height="18" xmlns="http://www.w3.org/2000/svg">
+          <path d="M24 16v2H0v-2h24zm0-8v2H0V8h24zm0-8v2H0V0h24z" fill="#FFF" fill-rule="evenodd" />
+        </svg>
       </div>
-
-      <div class="articles__container--image">
-        <img src="./images/desktop/image-transform.jpg" alt="An egg">
+      <div class="nav__items hidden">
+        <a class="nav__item" href="#">About</a>
+        <a class="nav__item" href="#">Services</a>
+        <a class="nav__item" href="#">Projects</a>
+        <a class="nav__item" href="#">Contact</a>
       </div>
     </div>
+  </nav>
+  <main class="body__container">
+    <section class="body__container--articles">
 
-    <div class="articles__container">
-      <div class="articles__container--text">
-        <h2 class="text__header">Stand out to the right audience</h2>
-        <p class="text__content">
-          Using a collaborative formula of designers, researchers, photographers, videographers, and copywriters, we’ll build and extend your brand in digital places.
-        </p>
-        <a href="#" class="text__link">Learn more</a>
+      <div class="articles__container">
+        <div class="articles__container--text">
+          <h2 class="text__header">Transform your brand</h2>
+          <p class="text__content">
+            We are a full-service creative agency specializing in helping brands grow fast.
+            Engage your clients through compelling visuals that do most of the marketing for you.
+          </p>
+          <a href="#" class="text__link">Learn more</a>
+        </div>
+
+        <div class="articles__container--image">
+          <img src="./images/desktop/image-transform.jpg" alt="An egg">
+        </div>
       </div>
 
-      <div class="articles__container--image">
-        <img src="./images/desktop/image-stand-out.jpg" alt="A cup">
+      <div class="articles__container">
+        <div class="articles__container--text">
+          <h2 class="text__header">Stand out to the right audience</h2>
+          <p class="text__content">
+            Using a collaborative formula of designers, researchers, photographers, videographers, and copywriters,
+            we’ll build and extend your brand in digital places.
+          </p>
+          <a href="#" class="text__link">Learn more</a>
+        </div>
+
+        <div class="articles__container--image">
+          <img src="./images/desktop/image-stand-out.jpg" alt="A cup">
+        </div>
       </div>
-    </div>
-  </section>
-  <section class="body__container--tiles">
-    <div class="tiles__container">
-      <div class="tiles__container--image">
-        <img src="./images/desktop/image-graphic-design.jpg" alt="Cherries">
+    </section>
+    <section class="body__container--tiles">
+      <div class="tiles__container">
+        <div class="tiles__container--image">
+          <img src="./images/desktop/image-graphic-design.jpg" alt="Cherries">
+        </div>
+        <h3 class="tiles__container--header">Graphic design</h3>
+        <div class="tiles__container--content">
+          Great design makes you memorable. We deliver artwork that underscores your brand message and captures
+          potential clients’ attention.
+        </div>
       </div>
-      <h3 class="tiles__container--header">Graphic design</h3>
-      <div class="tiles__container--content">
-        Great design makes you memorable. We deliver artwork that underscores your brand message and captures potential clients’ attention.
+      <div class="tiles__container">
+        <div class="tiles__container--image">
+          <img src="./images/desktop/image-photography.jpg" alt="An orange">
+        </div>
+        <h3 class="tiles__container--header">Photography</h3>
+        <div class="tiles__container--content">
+          Increase your credibility by getting the most stunning, high-quality photos that improve your business image.
+        </div>
       </div>
-    </div>
-    <div class="tiles__container">
-      <div class="tiles__container--image">
-        <img src="./images/desktop/image-photography.jpg" alt="An orange">
-      </div>
-      <h3 class="tiles__container--header">Photography</h3>
-      <div class="tiles__container--content">
-        Increase your credibility by getting the most stunning, high-quality photos that improve your business image.
-      </div>
-    </div>
-  </section>
-</main>
+    </section>
+  </main>
 
 
   Client testimonials
@@ -79,7 +94,8 @@
   Emily R.
   Marketing Director
 
-  Sunnyside’s enthusiasm coupled with their keen interest in our brand’s success made it a satisfying and enjoyable experience.
+  Sunnyside’s enthusiasm coupled with their keen interest in our brand’s success made it a satisfying and enjoyable
+  experience.
   Thomas S.
   Chief Operating Officer
 
@@ -93,8 +109,10 @@
   Contact
 
   <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
     Coded by <a href="#">Your Name Here</a>.
   </div>
+  <script src="./js/script.js"></script>
 </body>
+
 </html>
