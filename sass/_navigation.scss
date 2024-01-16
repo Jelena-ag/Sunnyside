@@ -2,14 +2,14 @@
 	background-color: $blueish;
 
 	.body__container--nav {
-		max-width: 1300px;
-		margin: 0 auto;
+		max-width: $desktop;
 		display: flex;
 		justify-content: space-between;
 		align-items: flex-end;
-		padding: 10px 40px;
+		margin: 0 auto;
+		padding: 10px 100px;
 
-		@media screen and (max-width: $largeMobile) {
+		@media screen and (max-width: $smallDesktop) {
 			padding: 10px 15px;
 		}
 
@@ -25,56 +25,37 @@
 				display: block;
 			}
 		}
-		.nav__items {
-			position: absolute;
-			top: 70px;
-			right: 15px;
-			display: flex;
-			flex-direction: column;
-			justify-content: space-evenly;
-			width: 345px;
-			height: 300px;
-			text-align: center;
-			background-color: $white;
-			z-index: 10;
 
-			&::before {
-				content: '';
-				position: absolute;
-				top: -20px;
-				right: 0;
-				border-bottom: 30px solid #fff;
-				border-left: 30px solid transparent;
+		.nav__item {
+			margin-left: 50px;
+			color: $white;
+
+			&:hover {
+				color: $darkGrey;
 			}
 
-			.nav__item {
-				margin-left: 50px;
-				color: $white;
+			&:nth-last-child(1) {
+				border-radius: 30px;
+				padding: 10px 20px;
+				font-family: $fontSerif;
+				color: $darkGrey;
+				background-color: $white;
+				text-transform: uppercase;
 
 				&:hover {
-					color: $darkGrey;
+					color: $white;
+					background-color: rgb(255, 255, 255, 0.2);
 				}
+			}
+			@media screen and (max-width: $largeMobile) {
+				color: $mediumGrey;
+				margin-left: 90px;
+				margin-right: 90px;
 
 				&:nth-last-child(1) {
-					border-radius: 30px;
-					padding: 10px 20px;
-					font-family: $fontSerif;
-					color: $darkGrey;
-					background-color: $white;
-					text-transform: uppercase;
-
+					background-color: $yellow;
 					&:hover {
-						color: $white;
-						background-color: rgb(255, 255, 255, 0.2);
-					}
-				}
-
-				@media screen and (max-width: $largeMobile) {
-					color: $mediumGrey;
-					margin-left: 90px;
-					margin-right: 90px;
-
-					&:nth-last-child(1) {
+						color: $darkGrey;
 						background-color: $yellow;
 					}
 				}
@@ -86,11 +67,33 @@
 @media screen and (max-width: $largeMobile) {
 	.bg__color--blue {
 		.body__container--nav {
-			.show {
-				display: none;
-			}
-			.burger__rotate{
+			.burger__rotate {
 				rotate: 90deg;
+			}
+			.nav__items {
+				position: absolute;
+				top: 70px;
+				right: 15px;
+				display: flex;
+				flex-direction: column;
+				justify-content: space-evenly;
+				width: 345px;
+				height: 300px;
+				text-align: center;
+				background-color: $white;
+				z-index: 10;
+
+				&::before {
+					content: '';
+					position: absolute;
+					top: -20px;
+					right: 0;
+					border-bottom: 30px solid #fff;
+					border-left: 30px solid transparent;
+				}
+			}
+			.hidden {
+				display: none;
 			}
 		}
 	}
