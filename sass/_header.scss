@@ -1,0 +1,26 @@
+.bg__color--blue {
+	.body__container--header {
+		position: relative;
+		top: 0;
+		left: 0;
+		display: flex;
+		flex-direction: column;
+		gap: 65px;
+		// @extend %adjust-img;
+		text-align: center;
+		background-image: url(../images/desktop/image-header.jpg);
+		background-size: cover;
+		background-repeat: no-repeat;
+
+		.header__slogan {
+			padding-top: 150px;
+			color: $white;
+			text-transform: uppercase;
+			font-family: $fontSerif;
+			letter-spacing: 5px;
+		}
+		.header__arrow {
+			padding-bottom: 250px;
+		}
+	}
+}
