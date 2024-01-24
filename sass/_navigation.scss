@@ -1,5 +1,5 @@
 .bg__color--blue {
-	background-color: $blueish;
+	background-color: $blueNav;
 
 	.body__container--nav {
 		max-width: $desktop;
@@ -7,11 +7,7 @@
 		justify-content: space-between;
 		align-items: flex-end;
 		margin: 0 auto;
-		padding: 10px 100px;
-
-		@media screen and (max-width: $smallDesktop) {
-			padding: 10px 15px;
-		}
+		padding: 20px 30px;
 
 		.nav__name {
 			font-size: 1.5rem;
@@ -72,13 +68,13 @@
 			}
 			.nav__items {
 				position: absolute;
-				top: 70px;
-				right: 15px;
+				top: 90px;
+				right: 30px;
 				display: flex;
 				flex-direction: column;
 				justify-content: space-evenly;
-				width: 345px;
-				height: 300px;
+				width: 315px;
+				height: 310px;
 				text-align: center;
 				background-color: $white;
 				z-index: 10;
