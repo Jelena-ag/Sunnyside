@@ -1,7 +1,24 @@
+.body__container--reviews {
+  padding: 130px 0 160px;
+  background-color: #FFFBF8;
+
+  @media screen and (max-width: $largeMobile) {
+    padding: 70px 0 90px;
+  }
+}
+
 .reviews__container {
   display: flex;
+  column-gap: 45px;
+
+  @media screen and (max-width: $largeMobile) {
+    flex-wrap: wrap;
+    row-gap: 65px;
+    padding: 0 10px;
+  }
 
   &--header {
+    margin-bottom: 80px;
     font-family: $fontSerif;
     font-size: 1.6rem;
     font-weight: 900;
@@ -9,19 +26,51 @@
     text-transform: uppercase;
     text-align: center;
     letter-spacing: 5px;
+
+    @media screen and (max-width: $largeMobile) {
+      font-size: 1.2rem;
+      font-weight: 600;
+      letter-spacing: 3px;
+    }
   }
 
   .review__container {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
 
     .review__container--image {
-      width: 144px;
-      height: 144px;
+      width: 75px;
+      height: 75px;
       border-radius: 50%;
       overflow: hidden;
       @extend %adjust-img;
+    }
+
+    .text__content {
+      text-align: center;
+    }
+
+    .text__name {
+      font-family: $fontSerif;
+      font-weight: 900;
+      font-size: 2rem;
+      color: $darkGrey;
+
+      @media screen and (max-width: $largeMobile) {
+        font-size: 1.5rem;
+      }
+    }
+
+    .text__position {
+      margin-top: 15px;
+      font-size: 1.4rem;
+      color: $lightGrey;
+
+      @media screen and (max-width: $largeMobile) {
+        font-size: 1rem;
+      }
     }
   }
 }
