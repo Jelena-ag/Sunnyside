@@ -1,7 +1,7 @@
 .bg__color--blue {
 	.body__container--header {
-		background: no-repeat 
-			center / cover url('../images/desktop/image-header.jpg');
+		background: no-repeat center / cover
+			url('../images/desktop/image-header.jpg');
 
 		@media screen and (max-width: $largeMobile) {
 			background: no-repeat cover url('../images/mobile/image-header.jpg');
@@ -12,9 +12,9 @@
 			flex-direction: column;
 			align-items: center;
 			text-align: center;
-			row-gap: 100px;
+			row-gap: 80px;
 			padding-top: 90px;
-			padding-bottom: 200px;
+			padding-bottom: 220px;
 
 			@media screen and (max-width: $largeMobile) {
 				row-gap: 40px;
