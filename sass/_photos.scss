@@ -1,0 +1,11 @@
+.body__container--photos {
+	font-size: 0;
+
+	img {
+		width: calc(100% / 4);
+
+		@media screen and (max-width: $largeMobile) {
+			width: calc(100% / 2);
+		}
+	}
+}

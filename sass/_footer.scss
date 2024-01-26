@@ -1,0 +1,48 @@
+.bg__color--lightgreen {
+	background-color: $greenish;
+
+	.container__footer {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		row-gap: 30px;
+		padding: 50px;
+		color: $green;
+
+		&--name {
+			font-size: 1.5rem;
+            font-weight: 900;
+			font-family: $fontSerif;
+		}
+
+		&--about {
+			display: flex;
+			column-gap: 40px;
+
+			a {
+				color: $darkModerateCyan;
+
+				&:hover {
+					color: white;
+				}
+			}
+		}
+
+		&--social {
+			display: flex;
+			column-gap: 25px;
+			padding-top: 30px;
+
+			svg {
+				&:hover {
+					filter: brightness(0) invert(1);
+				}
+			}
+		}
+	}
+}
+
+.attribution {
+    padding-right: 20px;
+	text-align: right;
+}
